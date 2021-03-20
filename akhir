@@ -19,10 +19,9 @@ while pilihan == "x" :
     print()
     jumlah = int(input("Berapa porsi (Masukkan angka)? = "))
 
-
     if makanan == 1:
         harga = 10000*jumlah
-    elif makanan== 2:
+    elif makanan == 2:
         harga = 10000*jumlah
     elif makanan == 3 : 
         harga = 10000*jumlah
@@ -66,14 +65,12 @@ while pilihan == "x" :
     elif minum == 5:
         pass
 
-    if minum ==5:
+#Menghitung total harga
+
+    if minum == 5:
         print("Total Pembayaran = ",harga)
     elif jumlah > 5:
-        diskon = harga - 3000
-        Total = diskon + total
-        print("Total Pembayaran = ",Total)
+        diskon = total-3000
+        print("Total Pembayaran = ",diskon)
     elif jumlah < 5:
         print("Total Pembayaran = ",total)
-
-
-
